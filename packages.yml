@@ -1,0 +1,15 @@
+packages:
+  - package: dbt-labs/codegen
+    version: [">=0.6.0", "<0.7.0"]
+    # https://hub.getdbt.com/dbt-labs/codegen/latest/
+
+  # This package includes a reference to dbt-date which in turn references
+  # dbt-utils so there's no need to also import dbt-utils in this project.
+  - package: calogica/dbt_expectations
+    version: [">=0.5.0", "<0.6.0"]
+    # https://hub.getdbt.com/calogica/dbt_expectations/latest/
+    # https://hub.getdbt.com/dbt-labs/dbt_utils/latest/
+
+  - package: dbt-labs/dbt_external_tables
+    version: [">=0.8.0", "<0.9.0"]
+    # https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/
